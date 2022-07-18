@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://kit.fontawesome.com/25131f5d0a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="icon/png" href="img/favicon.png" />
+    <title>ScentSation.</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="login-container1">
+        <div class="login-container1_logo">
+          <img src="img/LogoLogin.png" alt="" />
+        </div>
+
+        <form action="" class="login-container1_form1">
+          <input class="user" id="usuario" type="text" placeholder="Tu nombre" />
+          <input class="password" id="contrasenia" type="text" placeholder="1234" />
+          <a href="index.html"
+            ><input type="button" id="boton" value="Ingresar" onclick="ingresar()" class="button"
+          /></a>
+        </form>
+
+        <div class="login-container1_or">
+          <div class="linea"></div>
+          <p>or</p>
+          <div class="linea"></div>
+        </div>
+
+        <div class="login-container1_buttons">
+          <button class="button2">Ingresar con Google</button>
+          <a href="register.html"><input type="button" value="Crear Cuenta" class="button" /></a>
+        </div>
+      </div>
+
+      <div class="login-container2">
+        <div class="login-container2_img"></div>
+      </div>
+
+      <script src="login.js"></script>
+    </section>
+  </body>
+</html>

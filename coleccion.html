@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="coleccion.css" />
+    <script src="https://kit.fontawesome.com/25131f5d0a.js" crossorigin="anonymous"></script>
+    <script src="hamburguesa.js"></script>
+    <link rel="icon" type="icon/png" href="img/favicon.png" />
+    <title>ScentSation.</title>
+  </head>
+  <body onload="recononerLocalStorage()">
+    <header>
+      <nav class="menu">
+        <a href="#">
+          <img src="img/Logo.png" alt="" />
+        </a>
+        <ul class="menu_items">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Mi Colección</a></li>
+          <li><button class="cerrarSesion">Cerrar Sesión</button></li>
+        </ul>
+        <span class="btn_menu">
+          <i class="fa fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+
+    <div class="agregar">
+      <button id="btn-abrir-modal">Agregar perfume</button>
+      <button id="btn-eliminar">Eliminar Colección</button>
+    </div>
+
+    <dialog id="modal">
+      <form action="">
+      <input type="text" placeholder="Nombre" id="nombre" />
+      <select name="familia_olfativa" id="familiaOlfativa">
+        <option disabled selected>Familia Olfativa</option>
+        <option value="Amaderado">Amaderado</option>
+        <option value="Acuatico">Acuático</option>
+        <option value="Versatil">Versátil</option>
+        <option value="Floral">Floral</option>
+        <option value="Citrico">Citrico</option>
+        <option value="Dulce">Dulce</option>
+      </select>
+      <select name="genero" id="genero">
+        <option disabled selected>Género</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Unisex">Unisex</option>
+      </select>
+      <input type="text" placeholder="Marca" id="marca" />
+      <input type="text" placeholder="Pegá URL de la imagen" id="link" />
+      <input type="submit" id="btn-cerrar-modal" class="botonAgregar" onclick="crearObjetoNuevo()" value="Agregar"></input>
+    </form>
+    </dialog>
+
+    <div id="contenedor_cards">
+       <!-- <a class="card">
+        <img
+          class="imagen"
+          src="http://cdn.shopify.com/s/files/1/0066/3191/5610/products/Gucci-Guilty-Absolute-For-men.jpg?v=1643136146"
+          alt="Perfume"
+        />
+        <h2 class="titulo">Gucci Guilty Absolute</h2>
+        <h3 class="tipo">Amaderado/Cuero</h3>
+        <p class="genero">Masculino</p>
+        <p class="marca">Gucci</p>
+      </a>  -->
+    </div>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <a class="instagram"><i class="fab fa-instagram"></i></a>
+        <a class="twitter"><i class="fab fa-twitter"></i></a>
+        <a class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a class="facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </footer>
+
+    
+    <script src="modal.js"></script>
+    <script src="coleccion.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-container1 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container1_logo {
+  margin-bottom: 8vh;
+}
+
+.login-container1_logo img {
+  width: 100%;
+}
+
+.login-container1_form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container1_form1 .user {
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+.login-container1_form1 .password {
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #181818;
+  border: 1px solid #181818;
+}
+
+.login-container1_or p {
+  color: #181818;
+}
+
+.login-container1_or {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login-container1_or .linea {
+  border-bottom: 1px solid #969696;
+  min-width: 90px;
+  margin: 0 35px;
+}
+
+.login-container2 {
+  width: 60%;
+  height: 100%;
+}
+
+.login-container2_img {
+  background-image: url("img/Alberto.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container1_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.button2 {
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #181818;
+  color: white;
+  border: 1px solid #181818;
+}
+
+.button2:active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-container1_logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-container1_logo img {
+    width: 80%;
+  }
+
+  .login-container1_form1 .user {
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid black;
+  }
+
+  .login-container1_form1 .password {
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+  }
+
+  .button {
+    width: 230px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+  }
+
+  .button2 {
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .login-container2 {
+    width: 60%;
+    height: 100%;
+    display: none;
+  }
+
+  .login-container1_logo img {
+    width: 100%;
+  }
+
+  .login-container1_form1 .user {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid black;
+  }
+
+  .login-container1_form1 .password {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+  }
+
+  .login-container1 {
+    width: 100%;
+  }
+
+  .login-container1_form1 .password {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+  }
+
+  .button {
+    width: 280px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+  }
+
+  .button2 {
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+  }
+}
